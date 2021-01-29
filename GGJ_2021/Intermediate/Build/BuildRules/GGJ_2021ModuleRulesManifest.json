@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"E:\\Personal\\Unreal\\GGJ_2021\\GGJ_2021\\Source\\GGJ_2021\\GGJ_2021.Build.cs",
+		"E:\\Personal\\Unreal\\GGJ_2021\\GGJ_2021\\Source\\GGJ_2021.Target.cs",
+		"E:\\Personal\\Unreal\\GGJ_2021\\GGJ_2021\\Source\\GGJ_2021Editor.Target.cs"
+	],
+	"EngineVersion": "4.25.4"
+}
