@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "GGJ_2021 (Debug)",
+			"request": "launch",
+			"preLaunchTask": "GGJ_2021 Linux Debug Build",
+			"program": "/home/lindenk/projects/games/GGJ_2021/GGJ_2021/Binaries/Linux/GGJ_2021-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "GGJ_2021 (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "GGJ_2021 Linux DebugGame Build",
+			"program": "/home/lindenk/projects/games/GGJ_2021/GGJ_2021/Binaries/Linux/GGJ_2021-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "GGJ_2021 (Development)",
+			"request": "launch",
+			"preLaunchTask": "GGJ_2021 Linux Development Build",
+			"program": "/home/lindenk/projects/games/GGJ_2021/GGJ_2021/Binaries/Linux/GGJ_2021",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "GGJ_2021 (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "GGJ_2021 Linux Shipping Build",
+			"program": "/home/lindenk/projects/games/GGJ_2021/GGJ_2021/Binaries/Linux/GGJ_2021-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "GGJ_2021 (Test)",
+			"request": "launch",
+			"preLaunchTask": "GGJ_2021 Linux Test Build",
+			"program": "/home/lindenk/projects/games/GGJ_2021/GGJ_2021/Binaries/Linux/GGJ_2021-Linux-Test",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "GGJ_2021Editor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "GGJ_2021Editor Linux Debug Build",
+			"program": "/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/home/lindenk/projects/games/GGJ_2021/GGJ_2021/GGJ_2021.uproject"
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "GGJ_2021Editor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "GGJ_2021Editor Linux DebugGame Build",
+			"program": "/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor-Linux-DebugGame",
+			"args": [
+				"/home/lindenk/projects/games/GGJ_2021/GGJ_2021/GGJ_2021.uproject"
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "GGJ_2021Editor (Development)",
+			"request": "launch",
+			"preLaunchTask": "GGJ_2021Editor Linux Development Build",
+			"program": "/opt/unreal-engine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/lindenk/projects/games/GGJ_2021/GGJ_2021/GGJ_2021.uproject"
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/opt/unreal-engine/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/home/lindenk/projects/games/GGJ_2021/GGJ_2021/GGJ_2021.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/opt/unreal-engine"
+		}
+	]
+}

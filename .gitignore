@@ -79,3 +79,11 @@ DerivedDataCache/*
 
 # Mac Artifacts
 .DS_Store
+
+# IDE workspace files that I don't care about
+**/*.kdev4
+**/*.workspace
+
+# Other?
+**/DerivedDataCache
+
