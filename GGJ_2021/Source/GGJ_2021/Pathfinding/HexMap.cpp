@@ -10,16 +10,12 @@ AHexMap::AHexMap()
 	PrimaryActorTick.bCanEverTick = true;
 
 	RootComponent = CreateDefaultSubobject<USceneComponent>("Root");
-
-	onClickDelegate.BindUFunction(this, "OnHexClick");
 }
 
 // Called when the game starts or when spawned
 void AHexMap::BeginPlay()
 {
 	Super::BeginPlay();
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Begin play"));
-	
 }
 
 // Called every frame
@@ -66,8 +62,8 @@ void AHexMap::GenerateGrid()
 			hexTileCmpt->SetRelativeLocation(FVector(x * SpacingX + rowOffset, y * SpacingY, 0));
 			hexTileCmpt->SetRelativeRotation(FRotator(0, 90, 0));
 
+			onClickDelegate.BindUFunction(this, "OnHexClick");
 			hexTileCmpt->OnClicked.AddUnique(onClickDelegate);
-
 
 			tiles.Add(hexTileCmpt);
 		}
@@ -76,7 +72,9 @@ void AHexMap::GenerateGrid()
 
 void AHexMap::OnHexClick(UPrimitiveComponent* componenentClicked, FKey button)
 {
-	check(false);
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Clicked"));
+	auto hexTile = Cast<UHexTile2>(componenentClicked);
+	if (!IsValid(hexTile))
+		return;
+	hexTile->IncrementHeight();
+	hexTile->RandomColor();
 }
-

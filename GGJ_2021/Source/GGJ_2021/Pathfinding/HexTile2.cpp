@@ -31,5 +31,6 @@ void UHexTile2::BeginPlay()
 {
 	Super::BeginPlay();
 	MaterialInstance = CreateDynamicMaterialInstance(0, ((UMaterialInterface*)nullptr), FName(TEXT("None")));
-	//Oncli
+
+	
 }

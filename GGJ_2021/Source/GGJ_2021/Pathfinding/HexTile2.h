@@ -13,6 +13,7 @@
 UCLASS(Blueprintable, ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class GGJ_2021_API UHexTile2 : public UStaticMeshComponent
 {
+public:
 	GENERATED_BODY()
 
 public: 
@@ -29,7 +30,7 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	FIntPoint PositionInGrid;
 
-
+public:
 	UFUNCTION(BlueprintCallable, meta = (Category, OverrideNativeName = "RandomColor"))
 	void RandomColor();
 	UFUNCTION(BlueprintCallable, meta = (Category, OverrideNativeName = "IncrementHeight"))

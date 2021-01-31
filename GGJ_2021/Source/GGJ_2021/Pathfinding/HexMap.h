@@ -11,7 +11,9 @@
 UCLASS()
 class GGJ_2021_API AHexMap : public AActor
 {
+public:
 	GENERATED_BODY()
+
 public:
 	//UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	//UStaticMesh* mesh;
@@ -48,5 +50,6 @@ public:
 	virtual void OnConstruction(const FTransform& Transform) override;
 	UFUNCTION(BlueprintCallable, CallInEditor)
 	void GenerateGrid();
-	void OnHexClick(UPrimitiveComponent* componenentClicked, FKey button);
+	UFUNCTION(BlueprintCallable, meta = (Category, OverrideNativeName = "OnHexClick"))
+	virtual void OnHexClick(UPrimitiveComponent* componenentClicked, FKey button);
 };
