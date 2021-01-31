@@ -25,6 +25,6 @@ public:
 	int X;
 	int Y;
 
-	PathNode();
+	PathNode(int x, int y, bool enabled);
 	~PathNode();
 };
