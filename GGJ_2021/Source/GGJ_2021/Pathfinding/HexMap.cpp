@@ -18,6 +18,7 @@ AHexMap::AHexMap()
 void AHexMap::BeginPlay()
 {
 	Super::BeginPlay();
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Begin play"));
 	
 }
 
