@@ -7,7 +7,7 @@
 FGameActionPing::FGameActionPing()
   : type("ping") {}
 
-FGameActionPing::~FGameActionPing() {}
+//FGameActionPing::~FGameActionPing() {}
 
 int32 FGameActionPing::serialize(uint8 *buffer, int32 buf_size) {
   FString json;

@@ -16,5 +16,22 @@ AGGJ_2021GameMode::AGGJ_2021GameMode()
 
 	// Do a real quick test of the server connection, real quicky likey
 	UNetworkClient client;
-	client.connect();
+
+	if(client.connect(FIPv4Address(10, 1, 1, 1), 8732)) {
+    UE_LOG(LogTemp, Display, TEXT("Connected?"));
+
+    //uint8 data[] = "{ \"type\": \"ping\" }";
+    //int32 bytes_sent;
+
+    //client.Send(data, sizeof(data), bytes_sent);
+    //Socket->Recv(data, sizeof(data), bytes_sent);
+
+    //FString msg = BytesToString(data, sizeof(data));
+
+    //UE_LOG(LogTemp, Fatal, TEXT("GOT A RESPONSE!!!!!111 -> %s"), *msg);
+
+    client.disconnect();
+  } else {
+    UE_LOG(LogTemp, Display, TEXT("NOT CONNECTED!"));
+  }
 }

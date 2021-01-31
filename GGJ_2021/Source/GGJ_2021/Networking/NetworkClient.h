@@ -22,10 +22,10 @@ public:
 	UNetworkClient(/*FIPv4Endpoint addr*/);
 	~UNetworkClient();
 
-	int connect();
-	//void disconnect();
-	//void send_action();
+	bool connect(FIPv4Address addr, uint16 port);
+	void disconnect();
+	//int32 send_action();
 
 private:
-	//FIPv4Endpoint endpoint;
+	FSocket *socket;
 };
