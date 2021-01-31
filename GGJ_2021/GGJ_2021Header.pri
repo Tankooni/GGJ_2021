@@ -15896,5 +15896,7 @@ HEADERS += \
 	"$$GGJ_2021RootPath/Source/GGJ_2021/GGJ_2021.h" \
 	"$$GGJ_2021RootPath/Source/GGJ_2021/GGJ_2021Character.h" \
 	"$$GGJ_2021RootPath/Source/GGJ_2021/GGJ_2021GameMode.h" \
+	"$$GGJ_2021RootPath/Source/GGJ_2021/NetworkActorTest.h" \
+	"$$GGJ_2021RootPath/Source/GGJ_2021/Networking/NetworkClient.h" \
  
 

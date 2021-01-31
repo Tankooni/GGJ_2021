@@ -1,8 +1,11 @@
 {
 	"files.exclude": {
 		"/home/lindenk/projects/games/GGJ_2021/GGJ_2021/Content": true,
-		"/home/lindenk/projects/games/GGJ_2021/GGJ_2021/.vscode": true,
 		"/home/lindenk/projects/games/GGJ_2021/GGJ_2021/.kdev4": true,
-		"/home/lindenk/projects/games/GGJ_2021/GGJ_2021/Intermediate": true
+		"/home/lindenk/projects/games/GGJ_2021/GGJ_2021/Intermediate": true,
+		"/home/lindenk/projects/games/GGJ_2021/GGJ_2021/Saved": true,
+		"/home/lindenk/projects/games/GGJ_2021/GGJ_2021/DerivedDataCache": true,
+		"/home/lindenk/projects/games/GGJ_2021/GGJ_2021/.vscode": true,
+		"/home/lindenk/projects/games/GGJ_2021/GGJ_2021/.ionide": true
 	}
 }

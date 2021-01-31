@@ -1,17 +1,15 @@
 INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Source \
-	Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GGJ_2021 \
-	Source \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Core \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Engine \
 	/opt/unreal-engine/Engine/Source/Runtime \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Classes \
+	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public \
+	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Core \
 	/opt/unreal-engine/Engine/Source/Runtime/TraceLog/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/Core/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/TraceLog \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CoreUObject \
 	/opt/unreal-engine/Engine/Source/Runtime/CoreUObject/Public \
-	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Engine \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Classes \
-	/opt/unreal-engine/Engine/Source/Runtime/Engine/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/NetCore \
 	/opt/unreal-engine/Engine/Source/Runtime/Net \
 	/opt/unreal-engine/Engine/Source/Runtime/Net/Core/Classes \
@@ -238,6 +236,8 @@ INCLUDEPATH += \
 	/opt/unreal-engine/Engine/Source/Runtime/Experimental/GeometryCollectionSimulationCore/Public \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/ClothingSystemRuntimeInterface \
 	/opt/unreal-engine/Engine/Source/Runtime/ClothingSystemRuntimeInterface/Public \
+	Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/GGJ_2021 \
+	Source \
 	/opt/unreal-engine/Engine/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/AugmentedReality \
 	/opt/unreal-engine/Engine/Source/Runtime/AugmentedReality/Public \
 	/opt/unreal-engine/Engine/Source/Runtime/Launch/Private \

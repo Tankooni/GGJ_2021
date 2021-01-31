@@ -11928,5 +11928,7 @@ SOURCES += \
 	"$$GGJ_2021RootPath/Source/GGJ_2021/GGJ_2021.cpp" \
 	"$$GGJ_2021RootPath/Source/GGJ_2021/GGJ_2021Character.cpp" \
 	"$$GGJ_2021RootPath/Source/GGJ_2021/GGJ_2021GameMode.cpp" \
+	"$$GGJ_2021RootPath/Source/GGJ_2021/NetworkActorTest.cpp" \
+	"$$GGJ_2021RootPath/Source/GGJ_2021/Networking/NetworkClient.cpp" \
  
 
