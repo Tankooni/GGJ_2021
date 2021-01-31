@@ -8,11 +8,10 @@ AHexMap::AHexMap()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	
-	//ConstructorHelpers::FObjectFinder<UStaticMesh> mesh(TEXT("/Game/Meshes/HexTile_mesh.HexTile_mesh"));
-	//ConstructorHelpers::FObjectFinder<UMaterial> mat(TEXT("/Game/Meshes/lambert2.lambert2"));
 
 	RootComponent = CreateDefaultSubobject<USceneComponent>("Root");
+
+	onClickDelegate.BindUFunction(this, "OnHexClick");
 }
 
 // Called when the game starts or when spawned
@@ -66,7 +65,7 @@ void AHexMap::GenerateGrid()
 			hexTileCmpt->SetRelativeLocation(FVector(x * SpacingX + rowOffset, y * SpacingY, 0));
 			hexTileCmpt->SetRelativeRotation(FRotator(0, 90, 0));
 
-
+			hexTileCmpt->OnClicked.AddUnique(onClickDelegate);
 
 
 			tiles.Add(hexTileCmpt);
@@ -76,6 +75,7 @@ void AHexMap::GenerateGrid()
 
 void AHexMap::OnHexClick(UPrimitiveComponent* componenentClicked, FKey button)
 {
+	check(false);
 	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Clicked"));
 }
 
