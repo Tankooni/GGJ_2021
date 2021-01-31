@@ -10,7 +10,17 @@
 		}
 	],
 	"settings": {
-		"typescript.tsc.autoDetect": "off"
+		"typescript.tsc.autoDetect": "off",
+		"files.associations": {
+			"Jenkinsfile": "groovy",
+			"Vagrantfile": "ruby",
+			"array": "cpp",
+			"string": "cpp",
+			"iterator": "cpp",
+			"string_view": "cpp",
+			"vector": "cpp",
+			"ranges": "cpp"
+		}
 	},
 	"extensions": {
 		"recommendations": [

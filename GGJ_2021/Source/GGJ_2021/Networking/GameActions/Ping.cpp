@@ -1,16 +1,20 @@
 #include "Ping.h"
+#include "Json.h"
+#include "Runtime/JsonUtilities/Public/JsonObjectConverter.h"
+#include "Runtime/Core/Public/Containers/UnrealString.h"
 
-GameActionPing::GameActionPing() {
-  this->_id = 1;
-}
 
-GameActionPing::~GameActionPing() {
-  
-}
+FGameActionPing::FGameActionPing()
+  : type("ping") {}
 
-uint8* GameActionPing::compile() {
-  FJsonObject obj;
-  obj.SetNumberField("_id", this->_id);
+FGameActionPing::~FGameActionPing() {}
 
-  return obj.
+int32 FGameActionPing::serialize(uint8 *buffer, int32 buf_size) {
+  FString json;
+
+  if(!FJsonObjectConverter::UStructToJsonObjectString(*this, json, 0, 0)) {
+    UE_LOG(LogTemp, Warning, TEXT("AHHHHHHHHHHHHHHH"));
+  }
+
+  return StringToBytes(json, buffer, buf_size);
 }
