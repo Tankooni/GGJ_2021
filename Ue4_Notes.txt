@@ -1,0 +1,11 @@
+UFUNCTION(BlueprintCallable, CallInEditor)
+	Used to allow the calling of a function within the Editor
+	
+ GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("World delta for current frame equals %f"), GetWorld()->TimeSeconds));
+ 
+ GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Some debug message!"));
+ 
+ 
+ GameMode
+	BasePlayerContoller
+		EnableTouchEvents

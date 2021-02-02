@@ -6,4 +6,6 @@
 AHexPlayerController::AHexPlayerController()
 {
 	bEnableMouseOverEvents = true;
+	bEnableTouchEvents = true;
+	bShowMouseCursor = true;
 }
